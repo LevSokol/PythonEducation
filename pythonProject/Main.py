@@ -2,7 +2,7 @@ import random
 
 
 def print_delimeter():
-    print("**************************")
+    print("****************************************************")
 
 
 print("first")
@@ -116,8 +116,7 @@ str_var = str(int_var)
 print("Variable type after convert is ", type(int_var))
 print_delimeter()
 
-str_var = "120"
-int_var = int(str_var)
+int_var = int("120")
 print("Variable type after convert is ", type(int_var))
 print_delimeter()
 
@@ -125,3 +124,47 @@ print_delimeter()
 # print("Input default type is ", type(input))
 # print_delimeter()
 
+some_string = "Hello World"
+print(f"Has Hello in string '{some_string}'? {'Hello' in some_string}")
+print_delimeter()
+
+name = "alice"
+print(f"Name '{name}' in upper case is '{name.upper()}'")
+print_delimeter()
+
+name = "BOB"
+print(f"Name '{name}' in lower case is '{name.lower()}'")
+print_delimeter()
+
+string = "    Hello World      "
+print(f"String before strip is '{string}'")
+print(f"String before strip is '{string.strip()}'")
+print_delimeter()
+
+new_string = string.strip().replace("World", "Bob")
+print(f"String after strip and replace is '{new_string}'")
+print_delimeter()
+
+print(f"Alpha 'o' frequency in string {new_string} is {new_string.count('o')}")
+print_delimeter()
+
+number = "456123846453"
+print(f"Is string {number} digit? {number.isdigit()}")
+print_delimeter()
+
+# input = input("Enter a number: ")
+# if input.isdigit():
+#     print(f"The input {input} is digit")
+# else:
+#     print(f"The input {input} is not digit")
+# print_delimeter()
+
+name = "Bob"
+age = 25
+print(f"Name '{name}' is {age} years old")
+print_delimeter()
+
+x = 5
+y = 10
+print(f"Summary of x and y is {x + y}, multiple of x and y is {x * y}")
+print_delimeter()
