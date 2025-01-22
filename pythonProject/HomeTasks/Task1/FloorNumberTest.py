@@ -1,6 +1,6 @@
 import unittest
 
-from Task1.FloorNumber import *
+from HomeTasks.Task1.FloorNumber import *
 
 
 class FloorNumberTestCase(unittest.TestCase):

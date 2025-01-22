@@ -23,3 +23,28 @@ print_delimeter()
 
 print("В строке '", person_info, "' больше {:d} символов.".format(10), sep="")
 print_delimeter()
+
+number = 5000000
+source = f"{number:,d} символов"
+print(source)
+print_delimeter()
+
+number = 23.46184512498785156
+print("{:.2f}".format(number))
+print("{:.7f}".format(number))
+print("{:.12f}".format(number))
+print_delimeter()
+
+print("{:.2f}".format(number))
+print("{:6.2f}".format(number))
+print("{:7.2f}".format(number))
+print("{:8.2f}".format(number))
+print_delimeter()
+
+name = "Ann"
+age = 35
+print("Person name is '%s' and age is %d" % (name, age))
+print_delimeter()
+
+print("Formatting numbers are: %.2f and %e" % (number, number))
+print_delimeter()

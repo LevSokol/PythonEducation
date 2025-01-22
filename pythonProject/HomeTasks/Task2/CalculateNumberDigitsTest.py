@@ -1,6 +1,6 @@
 import unittest
 
-from Task2.CalculateNumberDigits import CalculateNumberDigits
+from HomeTasks.Task2.CalculateNumberDigits import CalculateNumberDigits
 
 
 class MyTestCase(unittest.TestCase):
