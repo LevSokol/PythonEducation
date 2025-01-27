@@ -1,3 +1,5 @@
+from random import random
+
 from Main import print_delimeter
 
 fruits = ["apple", "banana", "cherry"]
@@ -62,4 +64,27 @@ print_delimeter()
 fruit = fruits.pop()
 print(fruit)
 print(fruits)
+print_delimeter()
+
+fruits = ["apple", "banana", "cherry"]
+fruits2 = ["grape", "orange"]
+fruits.extend(fruits2)
+print("Fruits list after extending: ", fruits)
+print_delimeter()
+
+print("List before reverse", fruits)
+fruits.reverse()
+print("List after reverse: ", fruits)
+print_delimeter()
+
+nums = []
+for i in range(0, 8):
+    value = round(random() * 10)
+    if value not in nums:
+        nums.append(value)
+print("List before sorted: ", nums)
+nums.sort()
+print("List after sorted: ", nums)
+nums.sort(reverse=True)
+print("List after reverse sorted: ", nums)
 print_delimeter()
