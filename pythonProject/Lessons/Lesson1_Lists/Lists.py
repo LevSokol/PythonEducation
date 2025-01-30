@@ -88,3 +88,36 @@ print("List after sorted: ", nums)
 nums.sort(reverse=True)
 print("List after reverse sorted: ", nums)
 print_delimeter()
+
+source_string = "My name is Leo"
+print(f"String '{source_string}' after split: {source_string.split()}")
+print_delimeter()
+
+list = ["His", "name", "is", "Bob"]
+print(f"List '{list}' after join: {' '.join(list)}")
+print_delimeter()
+
+import random
+
+random.shuffle(nums)
+print(f"Source list: {nums}")
+print(f"List max value is {max(nums)}")
+print(f"List min value is {min(nums)}")
+print(f"List sum value is {sum(nums)}")
+print_delimeter()
+
+print(f"List is {fruits}")
+source_element = fruits[2]
+fruits[2] = "pineapple"
+print(f"List after change second element '{source_element}' to '{fruits[2]}' is {fruits}")
+print_delimeter()
+
+print(f"List before elements rearrangement is {fruits}")
+fruits[0], fruits[3] = fruits[3], fruits[0]
+print(f"List after elements rearrangement is {fruits}")
+print_delimeter()
+
+print(f"List of nums is {nums}")
+print(f"First three elements of list are {nums[:3]}")
+print(f"Every second list element is {nums[1::2]}")
+print_delimeter()
