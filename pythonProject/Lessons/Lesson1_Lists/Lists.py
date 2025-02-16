@@ -93,8 +93,8 @@ source_string = "My name is Leo"
 print(f"String '{source_string}' after split: {source_string.split()}")
 print_delimeter()
 
-list = ["His", "name", "is", "Bob"]
-print(f"List '{list}' after join: {' '.join(list)}")
+srt_list = ["His", "name", "is", "Bob"]
+print(f"List '{srt_list}' after join: {' '.join(srt_list)}")
 print_delimeter()
 
 import random
@@ -121,3 +121,62 @@ print(f"List of nums is {nums}")
 print(f"First three elements of list are {nums[:3]}")
 print(f"Every second list element is {nums[1::2]}")
 print_delimeter()
+
+files_names = ["doc1.txt", "doc2.txt", "doc3.txt", "img.jpeg"]
+for file_name in files_names:
+    print(f"File name: {file_name}")
+print_delimeter()
+
+greeting = "Hello world!"
+count_0 = 0
+for char in greeting:
+    count_0 += 1 if char == "o" else 0
+    print(char)
+print(f"Alpha 'o' frequency is {count_0}")
+print_delimeter()
+
+students = ["Alice", "Bob", "Carol", "Dave"]
+for student in students:
+    print(student)
+    for char in student:
+        print(char)
+print_delimeter()
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+for number in numbers:
+    if number % 2 == 0:
+        print(number)
+    if number == 10:
+        print("Stop program!")
+        break
+print_delimeter()
+
+range_obj = range(10)
+print(range_obj)
+print(list(range_obj))
+print_delimeter()
+
+# print(list(range(3, 7)))
+# print_delimeter()
+#
+# print(list(range(5, 11, 2)))
+# print_delimeter()
+#
+# print(list(range(8, 2, -1)))
+# print_delimeter()
+#
+# numbers = [10, 11, 12, 13, 14, 15]
+# for i in range(len(numbers)):
+#     numbers[i] += 1
+#     print(numbers[i])
+# print_delimeter()
+#
+# indexes = []
+# count = 0
+# for i in range(len(greeting)):
+#     if greeting[i] == "o":
+#         count += 1
+#         indexes.append(i)
+# print(f"Alpha 'o' counter is {count}")
+# print(f"Indexes are {indexes}")
+# print_delimeter()
